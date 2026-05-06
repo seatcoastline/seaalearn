@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Terima Kasih - CashLens</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body style="display: flex; align-items: center; justify-content: center; height: 100vh; text-align: center;">
+    <div class="product-card" style="max-width: 500px;">
+        <h2 style="color: #4f46e5;">Halo, {{ nama }}!</h2>
+        <p>Pesan kamu berhasil dikirim. Berikut ringkasannya:</p>
+        <div style="background: #f1f5f9; padding: 20px; border-radius: 12px; margin: 20px 0; text-align: left;">
+            <p><strong>Email:</strong> {{ email }}</p>
+            <p><strong>Isi Pesan:</strong> {{ pesan }}</p>
+        </div>
+        <a href="/" class="btn btn-primary">Kembali ke Beranda</a>
+    </div>
+</body>
+</html>
